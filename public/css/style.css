@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+hr {
+  border-top: 5px solid black;
+}
+
+.signup, .login, .resetpwd {
+  margin: 2.5% 20%;
+}
+
+.my-navbar {
+  display: flex;
+  padding: 1% 2%;
+  min-height: fit-content;
+  align-items: center;
+}
+
+.my-navbar-brand {
+  margin-right: auto;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-dashboard {
+  display: flex;
+}
+
+.user-card {
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.create-post {
+  width: 50%;
+  align-self: center;
+}
