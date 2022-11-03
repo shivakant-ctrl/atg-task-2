@@ -9,7 +9,7 @@ app.set('view engine', 'ejs')
 app.use(express.static('./public'))
 app.use(bodyParser.urlencoded({ extended: true }))
 
-mongoose.connect('mongodb://localhost:27017/atgDB', { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://admin:Test123@cluster0.gw99yck.mongodb.net/atgDB', { useNewUrlParser: true })
 
 const userSchema = new mongoose.Schema({
   username: String,
