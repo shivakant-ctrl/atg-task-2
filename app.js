@@ -3,7 +3,10 @@ const app = express()
 const path = require('path')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-const PORT = process.env.PORT || 5000
+let port = process.env.PORT
+if(port == null || port == "") {
+  port = 5000
+}
 
 app.set('view engine', 'ejs')
 app.use(express.static('./public'))
@@ -120,6 +123,6 @@ app.get('/resetpwd', (req, res) => {
   res.sendFile(__dirname + '/public/resetpwd.html')
 })
 
-app.listen(PORT, () => {
-  console.log('Server is listening on', PORT)
+app.listen(port, () => {
+  console.log('Server is listening')
 })
